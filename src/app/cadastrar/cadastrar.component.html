@@ -18,22 +18,22 @@
 
                    <div class="form-group">
                     <label for="senha">Senha</label>
-                    <input (input)="confirmSenha ($event)" class="form-control" type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                    <input (input)="confirmSenha($event)" class="form-control" type="password" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
 
                     <div class="form-group">
-                        <label [(ngModel)]="usuario.senha"  for="confirmSenha">Confirmar senha</label>
-                        <input class="form-control" type="password" id="confirmSenha" name="confirmSenha" placeholder="Confirme sua senha">
+                        <label  for="confirmSenha">Confirmar senha</label>
+                        <input [(ngModel)]="usuario.senha" class="form-control" type="password" id="confirmSenha" name="confirmSenha" placeholder="Confirme sua senha">
                     </div>
 
                     <div class="form-group">
-                        <label [(ngModel)]="usuario.foto" for="foto">URL da foto</label>
-                        <input  class="form-control" type="text" id="foto" name="foto" placeholder="Digite  a URL da sua foto">
+                        <label  for="foto">URL da foto</label>
+                        <input [(ngModel)]="usuario.foto" class="form-control" type="text" id="foto" name="foto" placeholder="Digite  a URL da sua foto">
                     </div>
 
                     <div class="form-group">
                         <label for="dataNasc">Data de nascimento</label>
-                        <input class="form-control" type="date" id="dataNasc" name="dataNasc" >
+                        <input [(ngModel)]="usuario.dataNascimento"class="form-control" type="date" id="dataNasc" name="dataNasc" >
                     </div>        
                                 
                     <div class="form-group">

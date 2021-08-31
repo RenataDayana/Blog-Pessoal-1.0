@@ -8,5 +8,5 @@ export class Usuario {
     public postagem: Postagem[]
     public foto: string
     public tipo: string
-    public dataNascimneto: Date
+    public dataNascimento: Date
 }
